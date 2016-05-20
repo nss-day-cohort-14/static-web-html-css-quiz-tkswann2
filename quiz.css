@@ -1,10 +1,20 @@
 html {
 	margin: 0;
 	padding: 0;
+	font-family: sans-serif;
 }
 
 h2, p {
+	font-size: .9em;
+	font-weight: 400;
+}
+
+.productTitle, .productInfo p {
 	font-size: .8em;
+}
+
+.productSpec p, .productPrice p, .productSpec footer p:last-of-type {
+	font-size: .7em;
 }
 
 .productCard {
@@ -17,21 +27,23 @@ h2, p {
 .productTitle {
 	border: 1px dotted lightgrey;
 	text-align: center;
-	font-size: .8em;
 }
 
-.productInfo img {
+.productImage {
 	display: block;
-	max-width: 100%;
-	max-height: 100%;
 	vertical-align: center;
 }
 
+.productImage img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
 .productInfo p {
-	font-size: .9em;
-	font-weight: 500;
+	font-weight: 600;
 	margin: 5px;
 	text-align: justify;
+
 }
 
 .productInfo p:last-of-type {
@@ -39,11 +51,11 @@ h2, p {
 	color: yellow;
 	margin: 0;
 	margin-top: 2px;
+	font-weight: 400;
 }
 
 .productSpec h2 {
-	margin-left: 5px;
-	margin: 2px 0 0 10px;
+	margin: 20px 0 0 10px;
 }
 
 .productSpec p {
@@ -54,7 +66,6 @@ h2, p {
 .productSpec footer p:last-of-type {
 	margin: 2px 0;
 	font-weight: 300;
-	font-size: .7em;
 }
 
 .productPrice h2 {
